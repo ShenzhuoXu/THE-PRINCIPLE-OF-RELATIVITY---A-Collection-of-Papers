@@ -36,6 +36,7 @@
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 \renewcommand{\theHsection}{\thechapter.\arabic{section}}
 \renewcommand{\theHsubsection}{\thechapter.\arabic{section}.\arabic{subsection}}
+\renewcommand{\theequation}{\arabic{equation}}
 
 \newtheorem{theorem}{Theorem}[chapter]
 \newtheorem{proposition}[theorem]{Proposition}
@@ -59,7 +60,7 @@
 }
 
 % \newcommand{\paperinfo}[2]{%
-%   \vspace{0.8em}
+%    \vspace{0.8em}
 %   {\centering\small
 %   \begin{tabular}{c}
 %   \textbf{Brief Introduction}\quad #1\\
@@ -68,18 +69,18 @@
 % }
 
 \newcommand{\paperheader}[5]{%
-  \refstepcounter{chapter}
-  \chapter*{}
-  \thispagestyle{plain}
-  \papertitle{#1}
-  \paperauthor{#2}
-  \papersubtitle{#3}
-  %\paperinfo{#4}{#5}
-  \vspace{1.3em}
-  \noindent\rule{\textwidth}{0.6pt}
-  \vspace{1.2em}
-  \addcontentsline{toc}{chapter}{#1}
-  \markboth{#1}{#1}
+    \refstepcounter{chapter}
+    \chapter*{}
+    \thispagestyle{plain}
+    \papertitle{#1}
+    \paperauthor{#2}
+    \papersubtitle{#3}
+    %\paperinfo{#4}{#5}
+    \vspace{1.3em}
+    \noindent\rule{\textwidth}{0.6pt}
+    \vspace{1.2em}
+    \addcontentsline{toc}{chapter}{#1}
+    \markboth{#1}{#1}
 }
 
 \newcommand{\collectiontitle}{THE PRINCIPLE OF RELATIVITY}
@@ -92,16 +93,16 @@
 
 \frontmatter
 \begin{titlepage}
-  \centering
-  \vspace*{3.5cm}
-  {\fontsize{24}{30}\selectfont\bfseries\collectiontitle\par}
-  \vspace{1.2cm}
-  {\Large\collectionsubtitle\par}
-  \vspace{2.2cm}
-  {\large\collectioneditor\par}
-  \vfill
-  {\large\collectiondate\par}
-  \vspace*{1.5cm}
+    \centering
+    \vspace*{3.5cm}
+    {\fontsize{24}{30}\selectfont\bfseries\collectiontitle\par}
+    \vspace{1.2cm}
+    {\Large\collectionsubtitle\par}
+    \vspace{2.2cm}
+    {\large\collectioneditor\par}
+    \vfill
+    {\large\collectiondate\par}
+    \vspace*{1.5cm}
 \end{titlepage}
 
 \chapter*{Preface}
