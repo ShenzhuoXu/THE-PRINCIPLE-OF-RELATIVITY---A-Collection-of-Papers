@@ -1,94 +1,29 @@
 \paperheader
 	{On the Electrodynamics of Moving Bodies}
-	{Albert Einstein}
-	{A foundational paper establishing the kinematics of special relativity.}
+	{A. Einstein}
+	{Translated from "Zur Elektrodynamik bewegter Körper," Annalen der Physik, 17, 1905.}
 
 
-\section{Introduction}
-Assume that the laws of physics take the same form in every inertial frame and that the speed of light in vacuum is constant. Then space and time can no longer be treated as isolated absolute quantities; instead, they must be related through a unified transformation law. This paper section demonstrates a clean collection layout with equations, tables, figures, and footnotes.\footnote{Footnotes are best used for supplementary remarks, publication details, or historical notes rather than for the main argument itself.}
+\section*{}
+It is known that Maxwell's electrodynamics - as usually understood at the present time - when applied to moving bodies, leads to asymmetries which do not appear to be inherent in the phenomena. Take, for example, the reciprocal electrodynamic action of a magnet and a conductor. The observable phenomenon here depends only on the relative motion of the conductor and the magnet, whereas the customary view draws a sharp distinction between the two cases in which either the one or the other of these bodies is in motion. For if the magnet is in motion and the conductor at rest, there arises in the neighbourhood of the magnet an electric field with a certain definite energy, producing a current at the places where parts of the conductor are situated. But if the magnet is stationary and the conductor in motion, no electric field arises in the neighbourhood of the magnet. In the conductor, however, we find an electromotive force, to which in itself there is no corresponding energy, but which gives rise - assuming the equality of the relative motion in  the two cases discussed - to electric currents of the same path and intensity as those produced by the electric forces in the former case.
 
-\section{Formula Example}
-The Lorentz transformation may be written as
-\begin{equation}
-\begin{aligned}
-x' &= \gamma(x - vt),\\
-t' &= \gamma\left(t - \frac{vx}{c^2}\right),\\
-y' &= y,\qquad z' = z,
-\end{aligned}
-\end{equation}
-where
-\begin{equation}
-\gamma = \frac{1}{\sqrt{1-\dfrac{v^2}{c^2}}}.
-\end{equation}
-From \eqref{eq:lorentz} one obtains the Minkowski interval
-\begin{equation}
-s^2 = c^2 t^2 - x^2 - y^2 - z^2,
-\end{equation}
-which remains invariant under the transformation.
+Examples of this sort, together with the unsuccessful attempts to discover any motion of the earth relative to the "light medium," suggest that the phenomena of electrodynamics as well as of mechanics possess no properties corresponding to the idea of absolute rest. They suggest rather that, as has already been shown to the first order of small quantities, the same laws of electrodynamics and optics will be valid for all frames of reference for which the equations of mechanics hold good.\footnote{The preceding memoir by Lorentz was not at this time known to the author.} We will raise this conjecture (the purport of which will hereafter be called the "Principle of Relativity") to the status of a postulate, and also introduce another postulate, which is only apparently irreconcilable with the former, namely, that light is always propagated in empty space with a definite velocity $c$ which is independent of the state of motion of the emitting body. These two postulates suffice for the attainment of a simple and consistent theory of the electrodynamics of moving bodies based on Maxwell's theory for stationary bodies. The introduction of a "luminiferous ether" will prove to be superfluous inasmuch as the view here to be developed will not require an "absolutely stationary space" provided with special properties, nor assign a velocity-vector to a point of the empty space in which electromagnetic processes take place.
 
-\begin{theorem}
-If two inertial frames are related by a Lorentz transformation, then the spacetime interval $s^2$ is invariant.
-\end{theorem}
+The theory to be developed is based - like all electrodynamics - on the kinematics of the rigid body, since the assertions of any such theory have to do with the relationships between rigid bodies (systems of co-ordinates), clocks, and electromagnetic processes. Insufficient consideration of this circumstance lies at the root of the difficulties which the electrodynamics of moving bodies at present encounters.
 
-\begin{proof}
-Substitute $x', y', z', t'$ into the expression $c^2 t'^2 - x'^2 - y'^2 - z'^2$. After expansion and simplification, the mixed terms cancel and the result reduces to $c^2 t^2 - x^2 - y^2 - z^2$.
-\end{proof}
 
-\section{Table Example}
-The table below lists the Lorentz factor for several representative velocities.
+\vspace{2em}
+\begin{center}
+    \Large\textbf{I. KINEMATICAL PART}
+\end{center}
+%vspace{0em}
 
-\begin{table}[htbp]
-\centering
-\caption{Lorentz factor at selected velocities}
-\begin{tabular}{>{\centering\arraybackslash}p{3cm} >{\centering\arraybackslash}p{4cm} >{\centering\arraybackslash}p{4cm}}
-\hline
-Velocity $v/c$ & Expression for $\gamma$ & Approximate value \\
-\hline
-0.20 & $\dfrac{1}{\sqrt{1-0.20^2}}$ & 1.021 \\
-0.50 & $\dfrac{1}{\sqrt{1-0.50^2}}$ & 1.155 \\
-0.80 & $\dfrac{1}{\sqrt{1-0.80^2}}$ & 1.667 \\
-0.95 & $\dfrac{1}{\sqrt{1-0.95^2}}$ & 3.203 \\
-\hline
-\end{tabular}
-\end{table}
+\section{Definition of Simultaneity}
+Let us take a system of co-ordinates in which the equations of Newtonian mechanics hold good.\footnote{i.e. to the first approximation.} In order to render our presentation more precise and to distinguish this system of co-ordinates verbally from others which will be introduced hereafter, we call it the "stationary system."
 
-\section{Figure Example}
-When external image assets are unnecessary, figures can be generated directly with \texttt{TikZ} and \texttt{PGFPlots}.
+If a material point is at rest relatively to this system of co-ordinates, its position can be defined relatively thereto by the employment of rigid standards of measurement and the methods of Euclidean geometry, and can be expressed in Cartesian co-ordinates.
 
-\begin{figure}[htbp]
-\centering
-\begin{tikzpicture}
-\begin{axis}[
-  width=0.8\textwidth,
-  height=6.5cm,
-  xlabel={$v/c$},
-  ylabel={$\gamma$},
-  ymin=1,
-  ymax=3.6,
-  xmin=0,
-  xmax=0.98,
-  grid=major,
-  thick,
-  samples=200
-]
-\addplot[color=black,domain=0:0.95]{1/sqrt(1-x^2)};
-\end{axis}
-\end{tikzpicture}
-\caption{The growth of the Lorentz factor as velocity increases}
-\end{figure}
 
-\begin{figure}[htbp]
-\centering
-\begin{tikzpicture}[scale=1]
-  \draw[->,thick] (-0.2,0) -- (5.2,0) node[right] {$x$};
-  \draw[->,thick] (0,-0.2) -- (0,3.2) node[above] {$ct$};
-  \draw[very thick,color=black] (0,0) -- (4.4,2.8) node[right] {$x'=0$};
-  \draw[very thick,dashed,color=black] (0,0) -- (2.8,2.8) node[above] {$x=0$};
-  \draw[dotted,color=black] (1.8,0) -- (1.8,1.15);
-  \draw[dotted,color=black] (0,1.15) -- (1.8,1.15);
-\end{tikzpicture}
-\caption{A simplified spacetime sketch for two inertial frames}
-\end{figure}
 
-\section{Layout Remarks}
-Every paper in the collection can preserve the same opening structure while allowing the body to expand freely according to the research topic. Longer derivations may continue with environments such as \texttt{align}, \texttt{gather}, or \texttt{split}; multipage tables may be handled with \texttt{longtable}.
+
+

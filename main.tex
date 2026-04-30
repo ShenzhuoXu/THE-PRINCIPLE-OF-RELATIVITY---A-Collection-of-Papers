@@ -1,6 +1,6 @@
 \documentclass[11pt,oneside]{book}
 
-\usepackage[a4paper,margin=2.7cm,headheight=14pt]{geometry}
+\usepackage[a4paper,margin=2.7cm,headheight=28pt]{geometry}
 \usepackage{amsmath,amssymb}
 \usepackage{array,longtable}
 \usepackage{graphicx}
@@ -11,6 +11,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{xcolor}
 \usepackage{indentfirst}
+\usepackage{siunitx} % For consistent units formatting
 
 \pgfplotsset{compat=1.18}
 \linespread{1.15}
@@ -26,7 +27,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyhead[L]{\parbox[b]{0.85\textwidth}{\raggedright\nouppercase{\leftmark}}}
 \fancyhead[R]{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -83,8 +84,8 @@
     \markboth{#1}{#1}
 }
 
-\newcommand{\collectiontitle}{THE PRINCIPLE OF RELATIVITY}
-\newcommand{\collectionsubtitle}{A Collection of Original Papers on the Special and General Theories of Relativity}
+\newcommand{\collectiontitle}{\Huge{THE\\PRINCIPLE\\OF\\RELATIVITY}}
+\newcommand{\collectionsubtitle}{\huge{A Collection of Original Papers on the Special and General Theories of Relativity}}
 \newcommand{\collectioneditor}{}
 \newcommand{\collectiondate}{2026 B.C.}
 
@@ -105,8 +106,18 @@
     \vspace*{1.5cm}
 \end{titlepage}
 
+\newgeometry{left=4.5cm,right=4.5cm,top=3cm,bottom=3cm,headheight=28pt}
 \chapter*{Preface}
 \addcontentsline{toc}{chapter}{Preface}
+\Large
+This collection of papers has been reproduced from the book \textit{The Principle of Relativity} (ISBN: 978-0-486-60081-9), originally published by Dover Publications in 1952, translated by W. Perrett and G. B. Jeffery, notes by A. Sommerfeld. What the editor has done is just to make minor typographical adjustments to the format and layout and add some comments.
+
+The papers herein are arranged in chronological order, and the original text has been preserved as faithfully as possible. The purpose of this volume is to provide a comprehensive and accessible introduction to the theory of relativity, allowing readers to engage directly with the foundational works of the great physicists who shaped this profound branch of physics.
+
+In addition, we have provided references to the original sources of these papers. We strongly encourage interested readers to consult these primary documents to cultivate a deeper and more authentic understanding of the principles of relativity.
+\par\normalsize
+
+\restoregeometry
 
 
 \tableofcontents
@@ -115,6 +126,14 @@
 \input{papers/Michelson's Interference Experiment}
 \input{papers/Electromagnetic Phenomena in a System Moving with Any Velocity Less Than That of Light}
 \input{papers/On the Electrodynamics of Moving Bodies}
+\input{papers/Does the Inertia of a Body Depend Upon Its Energy Content}
+\input{papers/Space and Time}
+\input{papers/On the Influence of Gravitation on the Propagation of Light}
+\input{papers/The Foundation of the General Theory of Relativity}
+\input{papers/Hamiton's Principle and the General Theory of Relativity}
+\input{papers/Cosmological Considerations on the General Theory of Relativity}
+\input{papers/Do Gravitational Fields Play an Essential Part in the Structure of the Elementary Particles of Matter}
+\input{papers/Glavitation and Electricity}
 
 \backmatter
 
