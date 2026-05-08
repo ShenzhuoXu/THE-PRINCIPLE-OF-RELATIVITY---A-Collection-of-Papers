@@ -35,7 +35,7 @@ In accordance with the definition the two clocks synchronize if
 $$ t_B - t_A = t'_A - t_B. $$
 
 We assume that this definition of synchronism is free from contradictions, and possible for any number of points; and that the following relations are universally valid: -
-\begin{enumerate}%[leftmargin=2.2em]
+\begin{enumerate}
 	\item If the clock at $B$ synchronizes with the clock at $A$, then the clock at $A$ synchronizes with the clock at $B$.
 	\item If the clock at $A$ synchronizes with the clock at $B$ and also with the clock at $C$, the clocks at $B$ and $C$ also synchronize with each other.
 \end{enumerate}
@@ -72,6 +72,48 @@ We imagine further that at the two ends $A$ and $B$ of the rod, clocks are place
 
 We imagine further that with each clock there is a moving observer, and that these observers apply to both clocks the criterion established in \S 1 for the synchronization of two clocks. Let a ray of light depart from $A$ at the time\footnote{"Time" here denotes "time of the stationary system" and also "position of hands of the moving clock situated at the place under discussion."} $t_A$, let it be reflected at $B$ at the time $t_B$, and reach $A$ again at the time $t'_A$. Taking into consideration the principle of constancy of the velocity of light we find out that $$ t_B - t_A = \frac{r_{AB}}{c-v} \quad\text{and}\quad t'_A - t_B = \frac{r_{AB}}{c+v} $$ where $r_{AB}$ donates the length of the moving rod - measured in the stationary system. Observers moving with the moving rod would thus find that the two clocks are not synchronous, while observers in the stationary system would declare the clocks to be synchronous.
 
+So we see that we cannot attach any \textit{absolute} signification to the concept of simultaneity, but that two events which, viewed from a system of co-ordinates, are simultaneous, can no longer be looked upon as simultaneous events when envisaged from a system which is in motion relatively to that system.
+
+
+\section{Theory of the Transformation of Co-ordinates and Times from a Stationary System to another System in Uniform Motion of Translation Relative to the Former}
+Let us in "stationary" space take two systems of co-ordinates, i.e. two systems, each of three rigid material lines, perpendicular to one another, and issuing from a point. Let the axes of $X$ of the two systems coincide, and their axes of $Y$ and $Z$ respectively be parallel. Let each system be provided with a rigid measuring-rod, and likewise all the clocks of the two systems, be in all respects alike.
+
+Now to the origin of one of the two systems ($k$) let a constant velocity $v$ be imparted in the direction of the increasing $x$ of the other stationary system ($K$), and let this velocity be communicated to the axes of the co-odinates, the relevant measuring-rod, and the clocks. To any time of the stationary system $K$ there then will correspond a definite position of the axes of the moving system, and from reasons of symmetry we are entitled to assume that the motion of $k$ may be such that the axes of the moving system are at the time $t$ (this "$t$" always denotes a time of the stationary system) parallel to the axes of the stationary system.
+
+We now imagine space to be measured from the stationary system $K$ by means of the stationary measuring-rod, and also from the moving system $k$ by means of the measuring-rod moving with it; and that we thus obtain the co-ordinates $x$, $y$, $z$, and $\xi$, $\eta$, $\zeta$ respectively. Further, let the time $t$ of the stationary system be determined for all points thereof at which there are clocks by means of light signals in the manner indicated in \S 1; similarly let the time $\tau$ of the moving system be determined for all points of the moving system at which there are clocks at rest relatively to that system by applying the method, given in \S 1, of light signals between the points at which the latter clocks are located.
+
+To any system of values $x$, $y$, $z$, $t$, which completely defines the place and time of an event in the stationary system, there belongs a system of values $\xi$, $\eta$, $\zeta$, $\tau$, determining that event relatively to the system $k$, and our task is now to find the system of equations connecting these quantities.
+
+In the first place it is clear that the equations must be \textit{linear} on account of the properties of homogeneity which we attribute to space and time.
+
+If we place $x' = x - vt$, it is clear that a point at rest in the system $k$ must have a system of values $x'$, $y$, $z$, independent of time. We first define $\tau$ as a function of $x'$, $y$, $z$, and $t$. To do this we have to express in equations that $\tau$ is nothing else than the summary of the data of clocks at rest in system $k$, which have been synchronized according to the rule given in \S 1.
+
+From the origin of the system $k$ let a ray be emitted at the time $\tau_0$ along the $X$-axis to $x'$, and at time $\tau_1$ be reflected thence to the origin of the co-odinates, arriving there at the time $\tau_2$; we then must have $\frac{1}{2}(\tau_0 + \tau_2) = \tau_1$, or, by inserting the arguments of the functions $\tau$ and applying the principle of the constancy of the velocity of light in the stationary system : - $$ \frac{1}{2}\left[ \tau(0,0,0,t) + \tau\left(0,0,0,t+\frac{x'}{c-v}+\frac{x'}{c+v}\right) \right] = \tau\left( x',0,0, t+\frac{x'}{c-v} \right) .$$ Hence, if $x'$ be chosen infinitesimally small, $$ \frac{1}{2}\left( \frac{1}{c-v} + \frac{1}{c+v} \right) \frac{\partial\tau}{\partial t} = \frac{\partial \tau}{\partial x'} + \frac{1}{c-v}\frac{\partial\tau}{\partial t} ,$$ or $$ \frac{\partial\tau}{\partial x'} = \frac{v}{c^2 - v^2} \frac{\partial\tau}{\partial t} .$$
+
+It is to be noted that instead of the origin of the co-odinates we might have chosen any other point for the point of origin of the ray, and the equation just obtained is therefore valid for all values of $x'$, $y$, $z$.
+
+An analogous consideration - applied to the axes of $Y$ and $Z$ - it being borne in mind that light is always propagated along these axes, when viewed from the stationary system, with the velocity $\sqrt{c^2 - v^2}$, gives us $$ \frac{\partial\tau}{\partial y} = 0,\quad \frac{\partial\tau}{\partial z} = 0 .$$ Since $\tau$ is a \textit{linear} function, it follows from these equations that $$ \tau = a\left( t - \frac{v}{c^2 - v^2} x' \right) $$ where $a$ is a function $\phi(v)$ at present unkown, and where for brevity it is assumed that at the origin of $k$, $\tau = 0$, when $t = 0$.
+
+With the help of this result we easily determine the quantities $\xi$, $\eta$, $\zeta$ by expressing in equations that light (as required by the principle of the constancy of the velocity of light, in combination with the principle of relativity) is also propagated with velocity $c$ when measured in the moving system. For a ray of light emitted at the time $\tau = 0$ in the direction of the increasing $\xi$ $$ \xi = c\tau \quad\text{or}\quad \xi = ac\left( t - \frac{v}{c^2 - v^2} x' \right) .$$ But the ray moves relatively to the initial point of $k$, when measured in the stationary system, with the velocity $c-v$, so that $$ \frac{x'}{c-v} = t .$$ If we insert this value of $t$ in the equation for $\xi$, we obtain $$ \xi = a\frac{c^2}{c^2 - v^2}x' .$$ In an analogous manner we find, by considering rays moving along the two other axes, that $$ \eta = a\tau = ac\left( t - \frac{v}{c^2 - v^2} x' \right) $$ when $$ \frac{y}{\sqrt{c^2 - v^2}} = t ,\quad x' = 0 .$$ Thus $$ \eta = a\frac{c}{\sqrt{c^2 - v^2}}y \quad\text{and}\quad \zeta = a\frac{c}{\sqrt{c^2 - v^2}}z .$$ 
+
+Substituting for $x'$ its value, we obtain
+\begin{align*}
+	\tau &= \varphi(v)\beta(t - vx/c^2), \\
+	\xi &= \varphi(v)\beta(x - vt), \\
+	\eta &= \varphi(v)y, \\
+	\zeta &= \varphi(v)z,
+\end{align*}
+where $$\beta = \frac{1}{\sqrt{1 - v^2/c^2}} ,$$ and $\varphi$ is an as yet unknown function of $v$. If no assumption whatever be made as to the initial position of the moving system and as to the zero point of $\tau$, an additive constant is to be placed on the right side of each of these equations.
+
+We now have to prove that any ray of light, measured in the moving system, is propagated with the velocity $c$, if, as we have assumed, this is the case in the stationary system; for we have not as yet furnished the proof that the principle of the constancy of the velocity of light is compatible with the principle of relativity.
+
+At the time $t = \tau = 0$, when the origin of the co-ordinates is common to the two systems, let a spherical wave be emitted therefrom, and be propagated with the velocity $c$ in system $K$. If $(x, y, z)$ be a point just attained by this wave, then $$ x^2 + y^2 + z^2 = c^2 t^2 .$$
+
+Transforming this equation with the aid of our equations of transformation we obtain after a simple calculation $$ \xi^2 + \eta^2 + \zeta^2 = c^2 \tau^2 .$$
+
+The wave under consideration is therefore no less a spherical wave with velocity of propagation $c$ when viewed in the moving system. This shows that our two fundamental principles are compatible.\footnote{The equations of the Lorentz transformation may be more simply deduced directly from the condition that in virtue of those equations the relation $x^2 + y^2 + z^2 = c^2 t^2$ shall have as its consequence the second relation $\xi^2 + \eta^2 + \zeta^2 = c^2 \tau^2$.}
+
+In the equations of transformation which have been developed there enters an unknown function $\varphi$ of $v$, which we will now determine.
 
 
 
